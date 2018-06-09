@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script src="https://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	window.onload = function () {
+		$("#user-city").text(ymaps.geolocation.city);
+	}
+</script>
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
+<span id="user-city">Неизвестно</span>
+<script>document.oncontextmenu=new Function("return false;")</script>
+
+<link rel="stylesheet" href="css/fonts.css">
+<style>body{
+		font-family: myriad, sans-serif;
+		font-weight: bold;
+		margin: 0;
+	}
+	#user-city{
+		height: 18px;
+		display: block;
+		line-height: 18px;
+	}
+</style>
